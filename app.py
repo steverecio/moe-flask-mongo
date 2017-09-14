@@ -22,7 +22,7 @@ RMS_PHOTOS = [
 ]
 
 def populate_db():
-    print db.moe_db.find().count()
+    print("HERE MUFUCKA %s " % db.moe_db.find().count())
     if not db.moe_db.find().count():
         for moe_url in RMS_PHOTOS:
             moe_doc = {'url': moe_url}
